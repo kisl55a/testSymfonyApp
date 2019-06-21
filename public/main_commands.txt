@@ -1,0 +1,8 @@
+ composer update
+ $  composer require symfony/apache-pack
+ $ bin/console debug:router
+$ composer req server
+$ composer self-update
+$ composer require server
+$ composer require annotations
+$ composer require sec-checker
