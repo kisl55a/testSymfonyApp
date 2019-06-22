@@ -1,0 +1,17 @@
+{% extends 'base.html.twig'%}
+{% block title %} Read {% endblock %}
+{% block body %}
+{# comment here
+https://twig.symfony.com/doc/2.x/
+ #}
+<h1> {{ title }}</h1>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in faucibus nulla, vel ornare justo. Aliquam sed justo nec felis blandit eleifend eget eu leo. Nunc ac porttitor diam. Ut vel lacus ut ipsum facilisis rutrum. Aenean in orci sodales, auctor neque eget, congue libero. Fusce mollis quam eu lobortis viverra. Aliquam congue at neque sed tristique. Suspendisse vitae interdum nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in faucibus nulla, vel ornare justo. Aliquam sed justo nec felis blandit eleifend eget eu leo. Nunc ac porttitor diam. Ut vel lacus ut ipsum facilisis rutrum. Aenean in orci sodales, auctor neque eget, congue libero. Fusce mollis quam eu lobortis viverra. Aliquam congue at neque sed tristique. Suspendisse vitae interdum nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+<h2> Comments ({{  comments|length }})
+ </h2>
+ <ul>
+ {% for comment in comments %}
+ <li>{{ comment }} </li>
+ {% endfor %}
+ </ul>
+ {% endblock %}

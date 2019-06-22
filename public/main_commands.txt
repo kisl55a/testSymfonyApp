@@ -6,3 +6,4 @@ $ composer self-update
 $ composer require server
 $ composer require annotations
 $ composer require sec-checker
+$ composer require twig
