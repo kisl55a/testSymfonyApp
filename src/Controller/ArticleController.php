@@ -33,6 +33,9 @@ s standard dummy text ever since the 1500s, when an unknown printer took a galle
   Ipsum passages,
  and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         '];
+
+        // dump($da, $this);
+
         return $this->render('article/show.html.twig',[
             'title' => ucwords(str_replace('-', ' ', $da)),
             'comments' => $comments,

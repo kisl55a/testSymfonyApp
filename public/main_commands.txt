@@ -7,3 +7,13 @@ $ composer require server
 $ composer require annotations
 $ composer require sec-checker
 $ composer require twig
+profiler helps to track all the activities 
+which happen in te application
+$ composer require profiler --dev
+$ composer require debug --dev
+How to delete individual libraries  
+$ composer unpack debug
+Cleanining the cache
+$ rm -rf var/cache/dev/*
+This is instead of Codeigniter "site_url()"
+{{ asset('css/sadasd')}} but it's needed to $composer require asset
