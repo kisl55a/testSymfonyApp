@@ -17,3 +17,4 @@ Cleanining the cache
 $ rm -rf var/cache/dev/*
 This is instead of Codeigniter "site_url()"
 {{ asset('css/sadasd')}} but it's needed to $composer require asset
+bin/console debug:router

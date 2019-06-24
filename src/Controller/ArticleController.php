@@ -9,14 +9,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class ArticleController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="app_homepage")
      */
     public function homepage()
     {
-        return new Response('OMG, MY FIRST(not really) page ');
+        return $this->render('article/homepage.html.twig');
     }
     /**
-     * @Route("/news/{da}")
+     * @Route("/news/{da}", name="article_show")
      */
     public function show($da)
     {
